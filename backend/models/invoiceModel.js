@@ -1,4 +1,4 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
 const ItemSchema = new mongoose.Schema(
   {
@@ -62,6 +62,11 @@ const invoiceSchema = new mongoose.Schema(
       email: { type: String, default: "" },
       address: { type: String, default: "" },
       phone: { type: String, default: "" },
+    },
+
+    items: {
+      type: [ItemSchema],
+      default: [],
     },
 
     currency: { type: String, default: "INR" },

@@ -522,7 +522,7 @@ export const invoicesStyles = {
   tableHead: "bg-gray-50/80 border-b border-gray-200/60",
   tableHeaderCell: "cursor-pointer px-6 py-4 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider hover:bg-gray-100/50 transition-colors duration-150",
   tableHeaderCellRight: "px-6 py-4 text-right text-xs font-semibold text-gray-500 uppercase tracking-wider",
-//   tableHeaderContent: "flex items-center gap-2",
+  tableHeaderContent: "flex items-center gap-2",
   tableBody: "divide-y divide-gray-200/60",
   tableRow: "hover:bg-gray-50/50 transition-colors duration-150 group",
   

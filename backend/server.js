@@ -24,7 +24,7 @@ app.use(express.urlencoded({limit: "20mb", extended: true}));
 connectDB();
 
 // ROUTES
-app.use("/uplaods", express.static(path.join(process.cwd(), "uploads")));
+app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
 
 app.use("/api/invoice", invoiceRouter);
 

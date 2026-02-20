@@ -8,6 +8,7 @@ import CreateInvoice from "./pages/CreateInvoice";
 import Invoices from "./pages/Invoices";
 import InvoicePreview from "./components/InvoicePreview";
 import BusinessProfile from "./pages/BusinessProfile";
+import Notfound from "./pages/Notfound";
 
 const ClerkProtected = ({ children }) => (
   <>
@@ -42,6 +43,8 @@ const App = () => {
 
         <Route path="create-invoice" element={<CreateInvoice />} />
         <Route path="business" element={<BusinessProfile />} />
+
+        <Route path="*" element={<Notfound/>} />
         </Route>
       </Routes>
     </div>

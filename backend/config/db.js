@@ -1,8 +1,14 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";;
+import dotenv from "dotenv";
 
+dotenv.config();
 
 export const connectDB = async () => {
-    await mongoose.connect('mongodb+srv://royaman56456_db_user:invoice123@cluster0.ppeocns.mongodb.net/InvoiceAI') 
-    .then(() => {console.log("DB CONNECTED");
-    })
+    try {
+        await mongoose.connect(process.env.MONGO_URI);
+
+        console.log("DB CONNECTED");
+    } catch (error) {
+        console.log("Database connection failed:", error);
+    }
 }

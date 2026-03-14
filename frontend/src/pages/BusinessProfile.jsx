@@ -6,7 +6,7 @@ import {
 } from "../assets/dummyStyles";
 import { useAuth, useUser } from "@clerk/clerk-react";
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = import.meta.env.VITE_API_BASE;
 
 // Icons
 const UploadIcon = ({ className = "w-5 h-5" }) => (

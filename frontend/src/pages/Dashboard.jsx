@@ -5,7 +5,7 @@ import { useAuth } from "@clerk/clerk-react";
 import KpiCard from "../components/KpiCard";
 import StatusBadge from "../components/StatusBadge";
 
-const API_BASE = "http://localhost:4000";
+const API_BASE = import.meta.env.VITE_API_BASE;
 
 /* normalize client object */
 function normalizeClient(raw) {
